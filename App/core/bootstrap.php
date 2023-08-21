@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 use App\core\App;
 
 App::bind('config', require'config.php');
@@ -13,7 +15,7 @@ function view($name, $data=[])
 
     extract($data);
 
-    return require "App/view/{$name}.view.php";
+    return require "App/view/{$name}.php";
     
     }
 
