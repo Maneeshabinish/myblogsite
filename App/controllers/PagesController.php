@@ -6,6 +6,8 @@ use App\core\App;
 
 use App\core\querybuilder;
 
+use App\core\Session;
+
 class PagesController{
  
 
@@ -17,12 +19,31 @@ class PagesController{
 
     }
 
+    public function signup()
+    {
+        return view('signup');
+
+    }
+
     public function users()
     {
         return view('users');
 
     }
 
+    public function validation()
+    {
+        return view('validation');
+
+    }
+
+    public function login(){
+
+        return view('login');
+    }
+
+    
+  
     public function editpost()
     {
 

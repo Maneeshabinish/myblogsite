@@ -15,7 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="/public/dist/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/public/dist/css/adminlte.min.css">
 </head>
@@ -35,8 +35,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/addpost" class="nav-link">Add Posts</a>
       </li>
+      
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/users" class="nav-link">Users</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/users" class="nav-link">Sign Up</a>
       </li>
     </ul>
 
@@ -153,6 +157,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <i class="nav-icon fas fa-tachometer-alt"></i> 
                   <p>
                     Users
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <a href="/signup" class="nav-link <?php echo activeMenu('users') ?>">
+                <i class="nav-icon fas fa-tachometer-alt"></i> 
+                  <p>
+                    Sign Up
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>

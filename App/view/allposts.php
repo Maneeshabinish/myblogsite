@@ -15,8 +15,8 @@ include('App\view\partials\header.php');
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">All Posts</a></li>
-              <li class="breadcrumb-item"><a href="#">Add Posts</a></li>
+              <li class="breadcrumb-item"><a href="/allposts">All Posts</a></li>
+              <li class="breadcrumb-item"><a href="/addpost">Add Posts</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

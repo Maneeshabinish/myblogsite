@@ -51,36 +51,26 @@ include('App\view\partials\header.php');
                   <thead>
                     <tr>
                       <th>Username</th>
-                      <th>Status</th>
-                      <th>Role</th>
-                      <th>Member for </th>
-                      <th>Last Access</th>
-                      <th>Operations</th>
+                      <th>Email</th>
+                      <th>Created on</th>
+                      <th>Last Update</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Alan</td>
-                      <td>Active</td>
-                      <td>Authenticated user</td>
-                      <td><span class="tag tag-success"> 3days and 4hours</span></td>
-                      <td><span class="tag tag-success"></span> 14/8/23</td>
-                      
-                      <td>
-                        <button type="button" class="btn btn-xs btn-outline-primary">Edit</button>
-                        <button type="button" class="btn btn-xs btn-outline-primary">Delete</button>
-                      </td>
-                    </tr>
-                    
-                      
-                   </tbody>
+                    <?php foreach ($user as $users): ?>
+                      <tr>
+                        <td><?php echo $users->first_name; ?></td>
+                        <td><?php echo $users->email; ?></td>
+                        <td><?php echo $users->created_on; ?></td>
+                        <td><?php echo $users->updated_on; ?></td>
+                      </tr>
+                    <?php endforeach; ?>
+                  </tbody>
                 </table>
               </div>
             
           </div>
-          
-            
-        
+               
           <!-- /.col-md-12 -->
         </div>
         <!-- /.row -->

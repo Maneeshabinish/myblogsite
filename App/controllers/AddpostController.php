@@ -3,7 +3,9 @@
 namespace App\controllers;
 
 use App\core\App;
+
 use App\core\Request;
+
 use App\core\Session;
 
 class AddpostController{

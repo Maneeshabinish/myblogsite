@@ -84,5 +84,15 @@ class querybuilder{
         $statement->execute();
     }
 
+    public function getcount($table, $emailid, $password){
+       
+        $statement= $this->pdo->prepare ("SELECT COUNT(*) FROM `$table` WHERE `email`= '$emailid' && `password`='$password'" );
+      
+        $statement->execute();
+
+        return $statement->fetchColumn();
+
+    }
+
 }
                  
